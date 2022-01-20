@@ -4,4 +4,4 @@ function add(a: number, b: number) {
 
 module.exports = {
 	add
-}
+};
