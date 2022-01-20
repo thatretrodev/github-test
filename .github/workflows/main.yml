@@ -35,7 +35,10 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: test
-          path: |
-            build/index.js
-            build/index.min.js
+          name: index.js
+          path: build/index.js
+            
+      - uses: actions/upload-artifact@v2
+        with:
+          name: index.min.js
+          path: build/index.min.js
