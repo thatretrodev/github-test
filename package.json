@@ -1,0 +1,24 @@
+{
+  "name": "github-test",
+  "version": "1.0.0",
+  "description": "Test",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --format=cjs --tsconfig=tsconfig.json --outfile=build/index.js;esbuild src/index.ts --bundle --minify --platform=node --format=cjs --tsconfig=tsconfig.json --outfile=build/index.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatretrodev/github-test.git"
+  },
+  "author": "thatretrodev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thatretrodev/github-test/issues"
+  },
+  "homepage": "https://github.com/thatretrodev/github-test#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.10",
+    "esbuild": "^0.14.11"
+  }
+}
